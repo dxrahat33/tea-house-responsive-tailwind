@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House | Responsive</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/d2e79cd343.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d2e79cd343.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
         tailwind.config = {
           theme: {
@@ -26,4 +32,140 @@
     <main class="max-w-screen-xl mx-auto"></main>
 
 </body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main class="max-w-screen-xl mx-auto px-6 md:px-16 lg:28">
+      <!-- header sections -->
+      <header class="md:flex mt-6 md:mt-8 lg:mt-10">
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-4xl font-black md:text-5xl lg:text-7xl">
+            It's good <br>
+            tea time at the <br>
+            Tea House
+          </h1>
+          <br>
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+          </p>
+          <br>
+          <button class="bg-gradient-to-r from-orange-400 to-red-500 px-5 py-3 rounded-lg text-white font-bold">
+            Explore more <i class="fa-solid fa-arrow-right pl-1 -rotate-45"></i>
+          </button>
+        </div>
+        <!-- Image Content -->
+         <div class="relative">
+          <!-- Image -->
+          <div>
+            <img class="w-full" src="images/banner.png" alt="">
+          </div>
+          <!-- Custom Review Card -->
+           <div class="absolute flex items-center gap-2 bg-white shadow-lg px-2 py-2 md:px-10 md:py-4 rounded-xl top-28 md:top-80 md:left-32">
+            <!-- Star Icon -->
+             <div>
+              <i class="fa-solid fa-star text-xl md:text-2xl text-amber-500"></i>
+             </div>
+             <!-- Card Text -->
+              <div class="">
+                <h2 class="font-bold text-xl lg:text-2xl">5.00</h2>
+                <p class="text-gray-500">Trust Pilot Ratings</p>
+              </div>
+           </div>
+         </div>
+      </header>
+
+      <!-- Featured Products Sections -->
+       <section class="mt-10 md:mt-32"> <!-- change-->
+        <!-- Title -->
+         <div class="text-center mb-9 md:mb-12">
+          <h1 class="text-3xl font-bold md:text-4xl mb-4">Our Featured Products</h1>
+          <p class="text-gray-500 max-w-xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+         </div>
+         <!-- Card Container -->
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Single Card -->
+             <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <img class="mx-auto pt-6" src="images/tea-1.png" alt="">
+              <!-- card details -->
+               <div class="p-4">
+                <h2 class="font-bold text-xl">Milk Tea</h2>
+                <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+               </div>
+             </div>
+             <!-- Single Card -->
+             <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <img class="mx-auto pt-6" src="images/tea-1.png" alt="">
+              <!-- card details -->
+               <div class="p-4">
+                <h2 class="font-bold text-xl">Milk Tea</h2>
+                <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+               </div>
+             </div>
+             <!-- Single Card -->
+             <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <img class="mx-auto pt-6" src="images/tea-1.png" alt="">
+              <!-- card details -->
+               <div class="p-4">
+                <h2 class="font-bold text-xl">Milk Tea</h2>
+                <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+               </div>
+             </div>
+             <!-- Single Card -->
+             <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <img class="mx-auto pt-6" src="images/tea-1.png" alt="">
+              <!-- card details -->
+               <div class="p-4">
+                <h2 class="font-bold text-xl">Milk Tea</h2>
+                <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+               </div>
+             </div>
+          </div>
+       </section>
+
+       <!-- Great Tea Section -->
+        <section class="mt-20 md:mt-40">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-14">
+            <!-- iamge -->
+            <div class="grid grid-cols-2 grid-rows-3 gap-4">
+              <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
+              <div class="bg-orange-50 rounded-xl row-span-2">
+                <img class="mx-auto my-5" src="images/fresh-1.png" alt="">
+              </div>
+              <div class="bg-stone-100 rounded-xl row-span-2">
+                <img class="mx-auto my-5" src="images/fresh-2.png" alt="">
+              </div>
+              <div class="h-38 bg-gradient-to-r from-stone-100 to-stone-50 rounded-xl"></div>
+            </div>
+            <!-- content -->
+            <div>
+              <h1 class="text-3xl md:text-5xl font-extrabold mb-6 md:mb-12">Great Tea, Freshly Presented</h1>
+              <p class="text-gray-500">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+              <br>
+              <h4 class="text-2xl font-semibold mb-3">Unique Taste</h4>
+              <p class="text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+              <br>
+              <h4 class="text-2xl font-semibold mb-3">Premium Quality</h4>
+              <p class="text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Review Sections -->
+         <section>
+          
+         </section>
+
+    </main>
+  </body>
 </html>
